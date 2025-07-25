@@ -1,0 +1,33 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.bg-turquesa {
+  background-color: #30D5C8;
+}
+
+h1, h2 {
+  font-size: 2rem;
+}
+
+.card-title {
+  color: #FF0080;
+}
+
+.bg-pink {
+    background-color: #ff69b4; 
+    border-color: #ff69b4;
+}
+
+.bg-pink:hover {
+    background-color: #ff1493; 
+    border-color: #ff1493;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand { font-size: 1rem; }
+  #sobre-mi .lead { font-size: 0.9rem; }
+}
+
+.card { transition: transform 0.3s ease; }
+.card:hover { transform: scale(1.02); }

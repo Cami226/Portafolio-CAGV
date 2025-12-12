@@ -87,9 +87,12 @@ a {
 .habilidades-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around; /* mantiene 3 columnas */
   gap: 30px;
   margin-top: 30px;
+  max-width: 1000px; /* opcional para centrar mejor */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .habilidad {

@@ -1,4 +1,7 @@
-/* General */
+
+/* =======================
+   General
+======================= */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -7,7 +10,9 @@ body {
   color: #333;
 }
 
-/* Navbar */
+/* =======================
+   Navbar
+======================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,4 +25,198 @@ body {
   z-index: 1000;
 }
 
-.n
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #FF6BA1;
+}
+
+/* =======================
+   Hero
+======================= */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  padding-top: 80px;
+  background: #ffe6f0;
+}
+
+.hero-content h2 span {
+  color: #FF6BA1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background: #FF6BA1;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #FF4C85;
+}
+
+/* =======================
+   Foto de perfil
+======================= */
+.foto-perfil {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #FF6BA1;
+}
+
+/* =======================
+   Secciones
+======================= */
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+/* =======================
+   Proyectos
+======================= */
+#proyectos {
+  background: #ffe6f0; /* fondo rosado */
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.proyectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+/* Imágenes de proyectos: tamaño inicial pequeño */
+.proyectos-grid .card img {
+  width: 200px; /* tamaño inicial */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+/* Efecto al pasar el cursor */
+.proyectos-grid .card img:hover {
+  transform: scale(1.5); /* agranda al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* =======================
+   Footer
+======================= */
+footer {
+  background: #ffe6f0; /* fondo rosado */
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  border-top: 1px solid #FF6BA1;
+}
+
+/* =======================
+   Habilidades
+======================= */
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.habilidad {
+  background: #fff0f6; /* rosa claro */
+  border: 2px solid #FF6BA1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.habilidad h3 {
+  color: #FF6BA1;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.habilidad ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.habilidad ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media(max-width: 900px) {
+  .habilidades-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    margin-bottom: 20px;
+  }
+  .proyectos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}

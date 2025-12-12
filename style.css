@@ -1,7 +1,4 @@
-
-/* =======================
-   General
-======================= */
+/* General */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -10,9 +7,7 @@ body {
   color: #333;
 }
 
-/* =======================
-   Navbar
-======================= */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,9 +39,7 @@ body {
   color: #FF6BA1;
 }
 
-/* =======================
-   Hero
-======================= */
+/* Hero */
 .hero {
   display: flex;
   justify-content: space-around;
@@ -75,85 +68,20 @@ body {
   background: #FF4C85;
 }
 
-/* =======================
-   Foto de perfil
-======================= */
+/* Foto de perfil */
 .foto-perfil {
   width: 200px;
   border-radius: 50%;
   border: 4px solid #FF6BA1;
 }
 
-/* =======================
-   Secciones
-======================= */
+/* Secciones */
 .section {
   padding: 80px 50px;
   text-align: center;
 }
 
-/* =======================
-   Proyectos
-======================= */
-#proyectos {
-  background: #ffe6f0; /* fondo rosado */
-  padding: 80px 50px;
-  text-align: center;
-}
-
-.proyectos-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-/* Imágenes de proyectos: tamaño inicial pequeño */
-.proyectos-grid .card img {
-  width: 200px; /* tamaño inicial */
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-origin: center;
-}
-
-/* Efecto al pasar el cursor */
-.proyectos-grid .card img:hover {
-  transform: scale(1.5); /* agranda al pasar el mouse */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  z-index: 10;
-  position: relative;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* =======================
-   Footer
-======================= */
-footer {
-  background: #ffe6f0; /* fondo rosado */
-  text-align: center;
-  padding: 20px;
-  color: #333;
-  border-top: 1px solid #FF6BA1;
-}
-
-/* =======================
-   Habilidades
-======================= */
+/* Sección Habilidades */
 .habilidades-container {
   display: flex;
   flex-wrap: wrap;
@@ -194,9 +122,57 @@ footer {
   color: #333;
 }
 
-/* =======================
-   Responsive
-======================= */
+/* Sección Proyectos */
+#proyectos {
+  background: #ffe6f0; /* rosa suave */
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.proyectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Imágenes de proyectos con efecto zoom */
+.proyectos-grid .card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.proyectos-grid .card img:hover {
+  transform: scale(1.1); /* agranda al 10% */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #ffe6f0; /* rosa suave */
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  border-top: 1px solid #FF6BA1;
+}
+
+/* Responsive */
 @media(max-width: 900px) {
   .habilidades-container {
     flex-direction: column;

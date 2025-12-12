@@ -87,6 +87,80 @@ a {
   text-align: center;
 }
 
+
+/* ----------------- Resume / Currículum ----------------- */
+.resume {
+  background: #fff0f6; /* rosa muy suave */
+  padding: 80px 50px;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto; /* centrado con margen inferior */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.resume .section-title h2 {
+  color: #FF6BA1;
+  margin-bottom: 40px;
+}
+
+/* Contenedor para las columnas */
+.resume .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* centra las columnas */
+}
+
+/* Cada columna */
+.resume .col-lg-6 {
+  flex: 1 1 400px; /* ancho mínimo de 400px, se ajusta */
+  max-width: 480px;
+}
+
+/* Items del Currículum */
+.resume-item {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #FF6BA1;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.resume-item h4 {
+  margin: 0 0 5px 0;
+  color: #FF6BA1;
+}
+
+.resume-item h5 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.resume-item ul li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+/* Responsive: en pantallas pequeñas se convierte en 1 columna */
+@media(max-width: 768px) {
+  .resume .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume .col-lg-6 {
+    max-width: 100%;
+  }
+}
+
 /* ----------------- Habilidades ----------------- */
 .habilidades-container {
   display: flex;

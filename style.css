@@ -181,3 +181,22 @@ footer {
 }
 
 
+
+
+/* Fondo rosa para la sección de Proyectos */
+#proyectos {
+  background: #ffe6f0; /* rosa suave */
+  padding: 80px 50px;
+  text-align: center;
+}
+
+/* Fondo rosa para el Footer */
+footer {
+  background: #ffe6f0; /* rosa suave */
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  border-top: 1px solid #FF6BA1; /* línea superior */
+}
+
+
